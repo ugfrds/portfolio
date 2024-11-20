@@ -117,7 +117,7 @@ nav{
 
  .social-links {
     margin-right: 3rem;
-    display:flex;
+    display:flex; 
     gap:1.5rem;
 }
 
@@ -225,6 +225,7 @@ a{
 }
 
 footer {
+    margin-top:auto;
     padding:1rem 3rem;
     color:hwb(192 93% 5% / 0.616);
     display: flex;

@@ -5,6 +5,7 @@ const projects = [
 { name: "Gadgets Shop Website", background: "url('../imgs/code.jpg')" },
 { name: "Dating Website", background: "url('../imgs/date.jpg')" },
 { name: "Trade Wisphers", background: "url('../imgs/tradewhispers.png')" },
+
 // Add more projects as needed
 ]; 
 
