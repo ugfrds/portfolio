@@ -514,6 +514,13 @@
     padding: 0.3rem 0.8rem;
      
 }
-
+.brands {
+      .logos {
+        .fab {
+         font-size:2rem;
+        }
+      }
     }
+  }
+
            

@@ -264,13 +264,17 @@ footer {
     }
     footer {
         padding:0.6rem 1.5rem;
-    }
+    } 
     footer p{
         font-size: 0.8rem;
     }
     footer .social-links{
         display:block;
-        gap: 2rem;
+        font-size: 0.9rem;
+        
+    }
+    .fab{
+        margin:0 0.3rem;
     }
 
     .nav-links {
