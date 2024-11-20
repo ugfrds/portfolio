@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Title | My Portfolio</title>
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/b-styles.css" >
+    <script src="../scripts/common.js" defer></script> 
+    <script src="../scripts/b-script.js" defer></script> 
+</head>
+<body>
+   <!-- NavBar -->
+    <header>
+    <nav>   
+        <div class="logo">
+          <a href="./homepage.html">Justlikewiseman</a>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        <div class="nav-links">
+          <a href="./homepage.html">Home</a>
+          <a href="./homepage.html#About-me">About</a>
+          <a href="./services.html">Services</a>
+          <a href="./projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+    
+        <div class="social-links">
+           <a href="https://www.linkedin.com/in/justlikewiseman" class="linkedin-link" target="_blank">
+              <i class="fab fa-linkedin fa-2x"></i> fab</a>
+          <a href="https://www.linkedin.com/in/justlikewiseman" class="linkedin-link" target="_blank">
+              <i class="fab fa-instagram fa-2x"></i>fab</a>
+          <a href="https://www.linkedin.com/in/justlikewiseman" class="linkedin-link" target="_blank">
+              <i class="fab fa-facebook fa-2x"></i>fab </a>
+        </div>
+     </nav>
+    </header>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1>Blog Post Title</h1>
+            <p class="meta">By <strong>Author Name</strong> | Published on <em>January 15, 2024</em></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada justo sed lectus euismod, in ultricies enim varius.</p>
+            <img src="featured-image.jpg" alt="A relevant description of the image">
+            <p>Suspendisse potenti. Vestibulum a augue at lectus aliquet bibendum sit amet sit amet risus.</p>
+            <div class="tags">
+                <span>Tags: </span>
+                <span>#WebDevelopment</span>
+                <span>#Coding</span>
+                <span>#Portfolio</span>
+                <span>#JavaScript</span>
+            </div>
+
+            <div class="social-share">
+                <h3>Share this post:</h3>
+                <a href="#"  title="Share on Facebook"><i class="fab fa-instagram fa-4x"></i>Facebook</a>
+                <a href="#"  title="Share on Twitter"><i class="fab fa-instagram fa-4x"></i>Twitter</a>
+                <a href="#"  title="Share on LinkedIn"><i class="fab fa-instagram fa-4x"></i>LinkedIn</a>
+              </div>
+              
+              <div class="comments-section">
+                <h3>Leave a Comment</h3>
+                <form id="comment-form">
+                  <textarea
+                    id="comment-input"
+                    rows="4"
+                    placeholder="Write your comment here..."
+                  ></textarea>
+                  <button type="submit">Post Comment</button>
+                </form>
+                <div id="comments-list">
+                  <h4>Comments:</h4>
+                  <ul></ul>
+                </div>
+              </div> 
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Search Box -->
+            <section class="search-box">
+                <h3>Search</h3>
+                <input type="text" placeholder="Search blog...">
+            </section>
+
+            <!-- Latest Posts -->
+            <section>
+                <h3>Latest Posts</h3>
+                <ul class="post-list">
+                    <li><a href="#">How to Build a Portfolio</a></li>
+                    <li><a href="#">Top JavaScript Frameworks</a></li>
+                    <li><a href="#">Design Trends for Developers</a></li>
+                </ul>
+            </section>
+
+            <!-- Popular Posts -->
+            <section>
+                <h3>Popular Posts</h3>
+                <ul class="post-list">
+                    <li><a href="#">Why React is Still King</a></li>
+                    <li><a href="#">Understanding CSS Grids</a></li>
+                    <li><a href="#">Building a Career in Tech</a></li>
+                </ul>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="b-cta">
+                <p>Need a skilled developer for your next project?</p>
+                <button class="cta-button">Reach Out</button>
+            </section>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Justlikewiseman All Rights Reserved</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/justlikewiseman" class="linkedin-link" target="_blank">
+              <i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://www.linkedin.com/in/justlikewiseman" class="linkedin-link" target="_blank">
+              <i class="fab fa-instagram"></i> instagram</a>
+          <a href="https://www.linkedin.com/in/justlikewiseman" class="linkedin-link" target="_blank">
+              <i class="fab fa-facebook"></i> facebook</a>
+        </div>
+    </footer>
+</body>
+</html>

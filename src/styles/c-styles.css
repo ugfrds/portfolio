@@ -1,0 +1,166 @@
+
+#contact{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background: url('../imgs/wavey-fingerprint.svg') no-repeat center center/cover;
+    padding:0 3rem;
+    margin:0 auto;
+}
+ 
+.c-grid {
+    display:flex;
+    max-width: 1000px;
+    max-height:500px;
+    margin-bottom:2rem;
+    border-radius:15px;
+    background-color: #191919;
+    padding:1.5rem;
+}
+
+.c-left-column{
+    
+    flex:1;
+    padding: 0 1.5rem;
+}
+
+.c-left-column .c-heading{
+    font-size: 1.6rem;
+    font-weight:bold;
+}
+.c-left-column .c-quote{
+    font-size:1.2rem;
+    font-style: italic;
+    font-weight:medium;
+
+}
+.c-left-column .c-details{
+    display:flex;
+    align-items: center;
+    gap:2rem;
+}
+.c-details .c-icon{
+    border: 1px solid whitesmoke;
+    padding: 15px 15px;
+    border-radius: 10px;
+    color:rgba(255, 255, 255, 0.6);
+}
+
+.c-details .c-sub-heading{
+    font-size:1.2rem;
+    font-weight:bold;
+}
+.c-details .c-paragraph{
+    line-height:0.8;
+   
+}
+.c-details .c-item{
+    color:rgba(255, 255, 255, 0.7);
+}
+
+.c-grid .c-form{
+    flex:2;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px 1fr 60px;
+    gap:1rem;
+    justify-content: center;
+    
+}
+.c-grid .c-form textarea{
+   grid-column: 1/-1;
+   grid-row: 3/3;
+   border-radius:15px;
+   background-color: #191919;
+   border: 1px solid whitesmoke;
+}
+.c-form textarea:focus {
+    background-color:whitesmoke ;
+}
+
+.c-grid .c-form button{
+    grid-column: 2/2;
+    grid-row: 4/4;
+    justify-self: end;
+    border-radius:15px;
+    padding:15px 50px;
+    background-color: #FEB273;
+    border:none;
+    font-size:medium;
+    font-weight:medium;
+    
+ }
+ .c-form input{
+    border-radius:15px;
+    padding:15px 30px;
+    background-color: #191919;
+    border: 1px solid whitesmoke
+ }
+ .c-form input:focus{
+    background-color: whitesmoke;
+ }
+.c-form .c-name{
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+.c-form .c-email {
+    grid-column:2/2;
+    grid-row:1/1;
+}
+.c-form .c-phone{
+    grid-column:1/1;
+    grid-row: 2/2;
+}
+.c-form .c-subject{
+    grid-column:2/2; 
+    grid-row: 2/2;
+}
+#form-errors {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+@media(max-width:768px){
+
+    .c-grid {
+        
+        flex-direction: column;
+        max-width: 400px;
+        max-height:1200px;
+        padding:1.5rem;
+    }
+    
+    .c-left-column .c-details .c-sub-heading{
+        display:none;
+    }
+
+    .c-left-column .c-heading{
+        font-size: 1rem;
+    }
+    .c-left-column .c-quote{
+        font-size:0.9rem;
+    }
+    .c-grid .c-form{
+        grid-template-columns: 130px 130px;
+        grid-template-rows: 50px 50px 150px 50px;
+        gap:1rem;
+    }
+    .c-grid .c-form button{
+        padding:0.5rem 1.5rem;
+       
+     }
+     .c-left-column .c-details{
+       
+        gap:1rem;
+    }
+     .c-details .c-icon{
+        font-size: 20px;
+        padding:0;
+        border: none;
+        
+    }
+  
+   
+}    

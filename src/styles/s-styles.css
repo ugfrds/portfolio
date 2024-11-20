@@ -1,0 +1,260 @@
+
+  
+/* service styles */
+.fa-check{
+    color:#FEB273;
+}
+#services{
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.services{
+    display:grid;
+    grid-template-columns: 350px 600px;
+    grid-template-rows: 1fr ;
+    gap:1rem;
+}
+.services .s-right-column {
+    grid-column: 1/1;
+    grid-row:1/1;
+    border-radius: 20px;
+    background: url('../imgs/wise.jpg ') no-repeat center center/cover;
+}
+
+.services .s-left-column {
+    grid-column:2/2;
+    grid-row: 1/1;
+    display:flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;   
+}
+.services .s-card{
+    position:relative;
+    width:500px;
+    height:250px;
+    border: 1px solid #ffebcd;
+    border-radius: 20px;
+    background-color: #191919;
+    padding: 0.8rem 1.2rem;
+    color:rgba(245, 245, 245, 0.7);
+    transition: 0.3s;
+}
+.services .s-card:hover{
+    transform:scale(1.05); 
+    color:whitesmoke;
+}
+.services .s-card:hover button{
+    transform:scale(1.1);
+    background-color: #FEB273;
+
+}
+
+.s-card .s-title{
+    font-size:24px;
+    font-weight: bold;
+}
+.s-card p{
+    line-height: 1;
+    font-weight:medium;
+}
+.s-card .s-p{
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+.s-card button{
+    font-size:0.8rem;
+    padding:15px 30px;
+    border:1px solid whitesmoke;
+    border-radius:5px;
+    color:whitesmoke;
+    text-transform:uppercase;
+    background-color: #191919;
+
+}
+.s-card .s-price{
+    position:absolute;
+    top:5px;
+    right:20px;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+.s-card .s-price p{
+    padding:0;
+    margin: 0;
+    line-height: 1;
+}
+.s-card .s-price .price-value{
+    font-size:3rem;
+    font-weight:500;
+}
+
+/* General Styling for Pricing Section */
+.pricing-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    
+  }
+  
+  /* Styling for Each Pricing Card */
+  .pricing-card {
+    background: #191919;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  
+  .pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .pricing-card:hover .pricing-button{
+    transform: scale(1.1);
+    background-color: #FEB273;
+  }
+
+
+  
+  /* Header Section of Each Card */
+  .pricing-header {
+    background-color:#191919;
+    border-bottom: 1px solid #ffebcd;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  
+  .package-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FEB273;
+  }
+  
+  .package-price {
+    font-size: 2rem;
+    color:rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Description and Pages Info */
+  .package-description,
+  .package-pages {
+    font-size: 1em;
+    color: whitesmoke;
+    margin: 15px 0;
+    line-height: 1.4;
+    word-wrap: break-word; /* Ensures long text wraps properly */
+  }
+  
+  /* Features List */
+  .package-features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px; /* Spacing between list items */
+    padding-left: 4rem;
+  }
+  
+  .package-features li {
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+  }
+  
+  .package-features li i {
+    margin-right: 8px;
+    font-size: 1.2em;
+  }
+  
+  .fa-check {
+    color: #FEB273; /* Green for included features */
+  }
+  
+  .fa-times {
+    color: #FEB273; /* Red for excluded features */
+  }
+  
+  /* Add-ons Section */
+  .package-addons {
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  .package-addons p {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .package-addons ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+  }
+  
+  /* Button Styling */
+  .pricing-button {
+    background-color: #191919;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #ffebcd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 768px) {
+    .pricing-card {
+      width: 100%; /* Cards take full width on smaller screens */
+      margin-bottom: 20px;
+    }
+    #services{
+      margin: 0 auto;  
+  }
+    .services{
+      display:flex;
+    }
+    .services .s-right-column {
+      display:none;
+    }
+    .services .s-left-column {
+      display:flex;
+      flex-wrap: wrap;   
+  }
+    .services .s-card{
+      width:90%;
+  }
+.s-card .s-title{
+  font-size:1rem;
+}
+.s-card p{
+   font-size: 0.9rem;
+}
+
+.s-card .s-price .price-value{
+  font-size:1.5rem;
+}
+  }
+  

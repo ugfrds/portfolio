@@ -5,9 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Kibirige Moses",
   "license": "ISC",
-  "description": "",
+  "description": "Personal Portfolio Developer Website",
   "dependencies": {
     "sass": "^1.81.0"
   }
