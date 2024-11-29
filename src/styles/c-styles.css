@@ -96,7 +96,7 @@
     background-color: #191919;
     border: 1px solid whitesmoke
  }
- .c-form input:focus{
+ .c-form input:focus,:active{
     background-color: whitesmoke;
  }
 .c-form .c-name{
